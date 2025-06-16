@@ -149,16 +149,18 @@
         width: 80%;
         display: flex;
         justify-content: space-evenly;
-        margin-top: 10rem;
+        margin-top: 8rem;
         border-radius: 0px 0px 0px 30px;
         background-color: var(--color--principal);
         padding: 1rem;
+        z-index: 10;
     }
 
     /** Links inviduales **/
     #ContenedorLinksNavegacion span {
         cursor: pointer;
         background: none;
+        font-size: 16.5px;
     }
 
     /** Links inviduales **/
