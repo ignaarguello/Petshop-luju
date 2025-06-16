@@ -40,6 +40,7 @@
      /*    border: 2px solid red ; */
         width: 100%;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
         margin-top: 1rem;
         padding: 2px;
@@ -49,7 +50,7 @@
     #ContenedorLinksNavegacion span {
         cursor: pointer;
         background-color: #F7C133;
-        padding: .5rem 1.2rem;
+        padding: .6rem .7rem;
         border-radius: 50px;
         margin: 0rem .1rem;
         transition: .5s ease-in-out;
