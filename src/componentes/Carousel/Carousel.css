@@ -1,17 +1,26 @@
 /* 360px */
 @media screen and (min-width: 360px) {
+
     /*? Contenedor General */
-    #ContenedorGeneralCarousel{
+    #ContenedorGeneralCarousel {
         /* border: 5px solid orangered; */
         height: 80vh;
     }
 
     /* Propiedades del Swiper */
-    .Swiper{
+    .Swiper {
         width: 100%;
         height: 100%;
         z-index: -1;
         border: none;
     }
-  }
-    
+
+    /* Estilos para el punto activo */
+    .swiper-pagination-bullet-active {
+        background-color: var(--color--secundario) !important;
+        /* Color de los puntos activos (azul) */
+        opacity: 1;
+        transform: scale(1.2);
+        /* Un poco más grande para el activo */
+    }
+}
