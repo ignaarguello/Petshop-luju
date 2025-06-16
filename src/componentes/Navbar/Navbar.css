@@ -1,4 +1,129 @@
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 360px) {
+
+    /*? Contenedor Navbar  */
+    #ContenedorNavbar {
+   /*      border: 2px solid red; */
+        min-height: 20vh;
+        background-color: var(--color--principal);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    /*? Contenedor Logo Navbar */
+    #ContenedorBrand {
+       /*  border: 2px solid green; */
+       margin-left: .6rem;
+       margin-top: 1rem;
+    }
+
+    /*? Contenedor Barra de busqueda y Links */
+    #ContenedorBarraBusqueda_LinksNavegacion {
+       /*  border: 2px solid blue; */
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin-top: .5rem;
+    }
+
+    /*? Contenedor Login y Contactos */
+    #ContenedorLoggin_Contactos {
+        /*  border: 2px solid yellow; */
+        width: 20%;
+        height: 100%;
+    }
+
+    /*? Contenedor Links Navegacion **/
+    #ContenedorLinksNavegacion {
+     /*    border: 2px solid red ; */
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1rem;
+        padding: 2px;
+    }
+
+    /** Links inviduales **/
+    #ContenedorLinksNavegacion span {
+        cursor: pointer;
+        background-color: #F7C133;
+        padding: .5rem 1.2rem;
+        border-radius: 50px;
+        margin: 0rem .1rem;
+        transition: .5s ease-in-out;
+    }
+
+    #ContenedorLinksNavegacion span:hover {
+        color: rgb(148, 148, 148);
+    }
+
+
+    /** Logo Principal **/
+    #LogoPrincipal {
+        width: 8rem;
+        height: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 60%;
+    }
+
+    /*? Contenedor Contactos y Login - Ambos */
+    #ContenedorLoggin_Contactos {
+       /*  border: 3px solid red; */
+        width: 100%;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* ? Contenedor Loggin - Inicio sesion - Cerrar sesion */
+    #ContenedorLoggin {
+       /*  border: 2px solid blue; */
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: .5rem;
+        margin-right: 2rem;
+    }
+
+
+    /*? Contenedor Contactos - INSTAGRAM - FACEBOOK - TWITTER */
+    #ContenedorContactos {
+       /*  border: 2px solid forestgreen; */
+        margin-top: 4rem;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        gap: .5rem;
+    }
+
+    /*? Boton Inciar Sesión */
+    #BotonIniciarSesión, #BotonCarrito {
+        /* border: 2px solid greenyellow; */
+        padding: 5px;
+        background-color: #f3a533;
+        border-radius: 40px;
+        width: 28%;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+
+}
+
+
+/*  */
+/*  */
+/*  */
+
+/*  */
+
+@media screen and (min-width: 1440px) {
 
     /*? Contenedor Navbar  */
     #ContenedorNavbar {
@@ -60,11 +185,11 @@
         border-radius: 60%;
         padding: .5rem;
         margin: .5rem 0 0 1rem;
-    }   
+    }
 
     /*? Contenedor Contactos y Login - Ambos */
-    #ContenedorLoggin_Contactos{
-     /*    border: 3px solid red; */
+    #ContenedorLoggin_Contactos {
+        /*    border: 3px solid red; */
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -73,8 +198,8 @@
     }
 
     /* ? Contenedor Loggin - Inicio sesion - Cerrar sesion */
-    #ContenedorLoggin{
-       /*  border: 2px solid blue; */
+    #ContenedorLoggin {
+        /*  border: 2px solid blue; */
         width: 100%;
         display: flex;
         justify-content: center;
@@ -83,7 +208,7 @@
 
 
     /*? Contenedor Contactos - INSTAGRAM - FACEBOOK - TWITTER */
-    #ContenedorContactos{
+    #ContenedorContactos {
         /* border: 2px solid forestgreen; */
         margin-top: 4rem;
         width: 100%;

@@ -25,24 +25,20 @@ export default function Navbar() {
           <input class="form-control me-2" type="search" placeholder="Buscando?" aria-label="Buscar..." />
           <button class="btn bg-warning" type="submit">Buscar</button>
         </form>
+      </div>
+      {/* 3 */}
         <div id="ContenedorLinksNavegacion">
           <span>Perros</span>
           <span>Gatos</span>
           <span>Ubicación</span>
-          <span>Otros</span>
+          <span>Accesorios</span>
         </div>
-      </div>
-      {/* 3 */}
+      {/* 4 */}
       <div id="ContenedorLoggin_Contactos">
-        <div id="ContenedorLoggin">
-          <span href="#login" style={{
-            cursor: 'Pointer',
-            backgroundColor: '#F3A533',
-            padding: '15px 25px',
-            borderRadius: '30px',
-          }
-          }>Iniciar Sesión</span>
-        </div>
+       {/*  <div id="ContenedorLoggin">
+          <span id='BotonIniciarSesión'>Iniciar Sesión</span>
+          <span id='BotonCarrito'>Carrito</span>
+        </div> */}
         {/* <div id="ContenedorContactos">
           <a href="#facebook" className="bi bi-facebook"></a>
           <a href="#twitter" className="bi bi-twitter"></a>
