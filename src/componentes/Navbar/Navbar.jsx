@@ -10,7 +10,12 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "bootstrap-icons/font/bootstrap-icons.css";
 // Import Bootstrap JS
 import "bootstrap/dist/js/bootstrap.min.js";
-// Import Bootstrap Icons CSS       
+// Import Bootstrap Icons CSS    
+
+
+//Iconos
+import { FaShoppingCart } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
 
 export default function Navbar() {
   return (
@@ -21,8 +26,8 @@ export default function Navbar() {
       </div>
       {/* 2 */}
       <div id="ContenedorBarraBusqueda_LinksNavegacion">
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Buscando?" aria-label="Buscar..." />
+        <form class="d-flex"  id="BarraNavegacion" >
+          <input class="form-control me-2" type="search" placeholder="Buscando..." aria-label="Buscar..." />
           <button class="btn bg-warning" type="submit">Buscar</button>
         </form>
       </div>
@@ -35,15 +40,8 @@ export default function Navbar() {
         </div>
       {/* 4 */}
       <div id="ContenedorLoggin_Contactos">
-       {/*  <div id="ContenedorLoggin">
-          <span id='BotonIniciarSesión'>Iniciar Sesión</span>
-          <span id='BotonCarrito'>Carrito</span>
-        </div> */}
-        {/* <div id="ContenedorContactos">
-          <a href="#facebook" className="bi bi-facebook"></a>
-          <a href="#twitter" className="bi bi-twitter"></a>
-          <a href="#instagram" className="bi bi-instagram"></a>
-        </div> */}
+          <span id='BotonIniciarSesión'><FaShoppingCart /></span>
+          <span id='BotonCarrito'><FaUser /></span>
       </div>
     </nav>
   );
