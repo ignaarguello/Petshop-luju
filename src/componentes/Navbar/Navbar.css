@@ -56,6 +56,9 @@
         transition: .5s ease-in-out;
     }
 
+
+    
+
     #ContenedorLinksNavegacion span:hover {
         color: rgb(148, 148, 148);
     }
