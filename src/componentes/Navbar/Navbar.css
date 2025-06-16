@@ -1,0 +1,65 @@
+@media screen and (max-width: 1440px) {
+
+    /*? Contenedor Navbar  */
+    #ContenedorNavbar {
+        /* border: 2px solid red; */
+        height: 20vh;
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--color--principal);
+        color: white;
+    }
+
+    /*? Contenedor Logo Navbar */
+    #ContenedorBrand {
+        /*  border: 2px solid green; */
+        height: 100%;
+        width: 20%;
+        height: 100%;
+    }
+
+    /*? Contenedor Barra de busqueda y Links */
+    #ContenedorBarraBusqueda_LinksNavegacion {
+        /* border: 2px solid blue; */
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*? Contenedor Login y Contactos */
+    #ContenedorLoggin_Contactos {
+        /*  border: 2px solid yellow; */
+        width: 20%;
+        height: 100%;
+    }
+
+    /** Contenedor Links Navegacion **/
+    #ContenedorLinksNavegacion {
+        /* border: 2px solid red ; */
+        width: 60%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2rem;
+    }
+
+    /** Links inviduales **/
+    #ContenedorLinksNavegacion span {
+        cursor: pointer;
+    }
+
+    /** Logo Principal **/
+    #LogoPrincipal {
+        width: 9rem;
+        height: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 60%;
+        padding: .5rem;
+        margin: 1rem 0 0 1rem;
+    }   
+
+}
