@@ -1,0 +1,17 @@
+/* 360px */
+@media screen and (min-width: 360px) {
+    /*? Contenedor General */
+    #ContenedorGeneralCarousel{
+        /* border: 5px solid orangered; */
+        height: 80vh;
+    }
+
+    /* Propiedades del Swiper */
+    .Swiper{
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        border: none;
+    }
+  }
+    
