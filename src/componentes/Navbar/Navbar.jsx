@@ -33,10 +33,10 @@ export default function Navbar() {
       </div>
       {/* 3 */}
         <div id="ContenedorLinksNavegacion">
-          <span>Perros</span>
-          <span>Gatos</span>
-          <span>Ubicación</span>
+          <span>Alimentos</span>
           <span>Accesorios</span>
+          <span>Ubicación</span>
+          <span>Nosotros</span>
         </div>
       {/* 4 */}
       <div id="ContenedorLoggin_Contactos">

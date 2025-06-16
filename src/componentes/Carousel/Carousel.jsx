@@ -7,39 +7,40 @@ import './Carousel.css';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/effect-fade';
 
 // import required modules
-import { Pagination, Autoplay } from 'swiper/modules';
+import { Pagination, Autoplay, EffectFade } from 'swiper/modules';
 
 //Imagenes
 import Petshop1 from '/imagenes/carousel/petshop1.png';
-import Petshop2 from '/imagenes/carousel/petshop2.png';
-import Petshop3 from '/imagenes/carousel/petshop3.png';
-import Petshop4 from '/imagenes/carousel/petshop4.png';
+import Correas from '/imagenes/carousel/correas.png';
+import OldPrince from '/imagenes/carousel/old_prince.png';
+import Eukanuba from '/imagenes/carousel/eukanuba_banner.png';
 
 // Array de imagenes para carousel
-const ImagenesCarousel = [Petshop1, Petshop2, Petshop3,Petshop4];
+const ImagenesCarousel = [Petshop1, Eukanuba, Correas, OldPrince];
 
 export default function Carousel() {
     return (
         <div id='ContenedorGeneralCarousel'>
             <Swiper
                 navigation={true}
-                modules={[Pagination, Autoplay]}
+                modules={[Pagination, Autoplay, EffectFade]}
                 className="Swiper"
                 direction={'vertical'}
                 pagination={{
                     clickable: true,
                 }}
                 autoplay={{
-                    delay: 2500,
+                    delay: 4000,
                     disableOnInteraction: false,
                 }}
                 loop={true}
+                effect={'fade'}
             >
                 {ImagenesCarousel.map((slide) => (
                     <SwiperSlide key={slide.id} style={{ backgroundImage: `url(${slide})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-                          
                     </SwiperSlide>
                 ))}
             </Swiper>

@@ -4,7 +4,11 @@
   box-sizing: border-box;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 :root{
-  --color--principal:#1E1A4D;
+  --color--principal:#234196;
   --color--secundario:#F7C133;
 }
