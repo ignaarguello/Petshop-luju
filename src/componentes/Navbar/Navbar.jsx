@@ -35,14 +35,19 @@ export default function Navbar() {
       {/* 3 */}
       <div id="ContenedorLoggin_Contactos">
         <div id="ContenedorLoggin">
-          <a href="#login">Login</a>
-          <a href="#register">Register</a>
+          <span href="#login" style={{
+            cursor: 'Pointer',
+            backgroundColor: '#F3A533',
+            padding: '15px 25px',
+            borderRadius: '30px',
+          }
+          }>Iniciar Sesión</span>
         </div>
-        <div id="ContenedorContactos">
+        {/* <div id="ContenedorContactos">
           <a href="#facebook" className="bi bi-facebook"></a>
           <a href="#twitter" className="bi bi-twitter"></a>
           <a href="#instagram" className="bi bi-instagram"></a>
-        </div>
+        </div> */}
       </div>
     </nav>
   );

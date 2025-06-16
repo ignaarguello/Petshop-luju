@@ -36,7 +36,7 @@
         height: 100%;
     }
 
-    /** Contenedor Links Navegacion **/
+    /*? Contenedor Links Navegacion **/
     #ContenedorLinksNavegacion {
         /* border: 2px solid red ; */
         width: 60%;
@@ -52,14 +52,44 @@
 
     /** Logo Principal **/
     #LogoPrincipal {
-        width: 9rem;
+        width: 8.5rem;
         height: 8rem;
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 60%;
         padding: .5rem;
-        margin: 1rem 0 0 1rem;
+        margin: .5rem 0 0 1rem;
     }   
+
+    /*? Contenedor Contactos y Login - Ambos */
+    #ContenedorLoggin_Contactos{
+     /*    border: 3px solid red; */
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* ? Contenedor Loggin - Inicio sesion - Cerrar sesion */
+    #ContenedorLoggin{
+       /*  border: 2px solid blue; */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /*? Contenedor Contactos - INSTAGRAM - FACEBOOK - TWITTER */
+    #ContenedorContactos{
+        /* border: 2px solid forestgreen; */
+        margin-top: 4rem;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+    }
 
 }
