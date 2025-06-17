@@ -33,7 +33,7 @@ export default function Carousel() {
                     clickable: true,
                 }}
                 autoplay={{
-                    delay: 4000,
+                    delay: 350,
                     disableOnInteraction: false,
                 }}
                 loop={true}
