@@ -4,6 +4,7 @@ import React from 'react'
 import Navbar from '../../componentes/Navbar/Navbar'
 import Carousel from '../../componentes/Carousel/Carousel'
 import BannerPagos from '../../componentes/BannerPagos/BannerPagos'
+import CarouselCards from '../../componentes/CarouselCards/CarouselCards'
 
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
         <Navbar/>
         <Carousel />
        {/*  <BannerPagos /> */}
+       <CarouselCards />
     </div>
   )
 }
