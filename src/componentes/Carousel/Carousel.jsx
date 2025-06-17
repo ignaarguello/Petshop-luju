@@ -28,7 +28,7 @@ export default function Carousel() {
                 navigation={true}
                 modules={[Pagination, Autoplay, EffectFade]}
                 className="Swiper"
-                direction={'vertical'}
+                direction={'horizontal'}
                 pagination={{
                     clickable: true,
                 }}
