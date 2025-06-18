@@ -40,8 +40,8 @@ const DatosCard = [
     },
     {
         id: 4,
-        titulo: 'Eukanuba Senior Large 15Kg',
-        descripcion: 'Eukanuba Adult Senior Large Breed está recomendado para perros de razas de raza grande o gigante desde los 5 años de edad.',
+        titulo: 'Eukanuba Senior Large 15Kg Optimal Energy',
+        descripcion: 'Eukanuba Adult Senior Large Breed está recomendado para perros de razas de raza grande o gigante desde los 5 años de edad. Optimal Energy',
         imagen: 'imagenes/productos/comidas/EukanubaCard.png',
         precio: 63670,
 
@@ -57,7 +57,7 @@ const DatosCard = [
     {
         id: 6,
         titulo: 'Pro Plan Cat Adult 7+ 3 Kg',
-        descripcion: 'Alimento super premium para gatos mayores de 7 años.',
+        descripcion: 'Alimento super premium para gatos mayores de 7 años. Rich in Protein',
         imagen: 'imagenes/productos/comidas/ProPlanGato.png',
         precio: 43170,
     },
@@ -103,7 +103,7 @@ export default function App() {
                             <p className='DescripcionCard'>{slide.descripcion}</p>
                             <p className='PrecioCard'>${slide.precio.toLocaleString('es-CL')}</p>
                             <div id='ContenedorBotonCard'>
-                                <IoIosAdd id='IconoAdd' style={{color:'white',}} />
+                                <IoIosAdd id='IconoAdd' style={{ color: 'white', }} />
                                 <span>Comprar</span>
                             </div>
                         </section>

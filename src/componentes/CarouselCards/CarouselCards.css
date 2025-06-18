@@ -2,7 +2,7 @@
 
     /* ? Contenedor General */
     #ContenedorGeneralCarouselCards {
-    /*     border: 5px solid green; */
+        /*     border: 5px solid green; */
         min-height: 70vh;
         width: 100%;
         margin-top: 3rem;
@@ -26,7 +26,9 @@
 
     /*? Contenedor Cuerpo de la cara */
     #ContenedorCuerpoCard {
-        /* border: 2px solid red; */      
+        /*  border: 2px solid red;   */
+        display: flex;
+        flex-direction: column;
     }
 
     /*? Imagen Card */
@@ -39,8 +41,7 @@
 
     /* ? Titulo de la card */
     .TituloCard {
-          /* border: 2px solid mediumaquamarine; */
-        align-self: flex-end;
+        /* border: 2px solid mediumaquamarine; */
         font-size: 16px;
         color: black;
         font-weight: bold;
@@ -79,7 +80,55 @@
     }
 
     /* ? Contenedor Icono */
-    #IconoAdd{
+    #IconoAdd {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    /*? Contenedor Cuerpo de la cara */
+    #ContenedorCuerpoCard {
+        /*  border: 2px solid red;   */
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* ? Titulo de la card */
+    .TituloCard {
+        /* border: 2px solid mediumaquamarine; */
+        font-size: 19px;
+        margin-top: 12px;
+        min-height: max-content;
+        text-align: justify;
+    }
+
+    /*? Descripcion de la cara */
+    .DescripcionCard {
+        /*  border: 2px solid chartreuse; */
+        height: 4.5rem;
+        font-size: 15.5px;
+        margin-top: 0;
+        color: grey;
+        font-weight: 300;
+    }
+
+    /* ? Precio de la card */
+    .PrecioCard {
+        margin: 1.5rem 0;
+        font-size: 22px;
+        font-weight: bold;
+        color: var(--color--principal);
+    }
+
+    /* ? Contenedor Boton Card */
+    #ContenedorBotonCard {
+        width: 85%;
+        align-self: center;
+        margin-top: 0;
+    }
+
+    /* ? Contenedor Icono */
+    #IconoAdd {
         font-size: 1.4rem;
     }
 }
