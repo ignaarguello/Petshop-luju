@@ -16,9 +16,10 @@ import { Pagination, Autoplay, EffectFade } from "swiper/modules";
 import Petshop1 from "/imagenes/carousel/petshop1.png";
 import OldPrince from "/imagenes/carousel/old_prince.png";
 import Eukanuba from "/imagenes/carousel/eukanuba_banner.png";
+import Petshop3 from "/imagenes/carousel/petshop3.png";
 
 // Array de imagenes para carousel
-const ImagenesCarousel = [Petshop1, Eukanuba, OldPrince];
+const ImagenesCarousel = [Petshop1, Eukanuba, OldPrince, Petshop3];
 
 export default function Carousel() {
   return (
