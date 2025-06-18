@@ -10,10 +10,10 @@ import CarouselCards from '../../componentes/CarouselCards/CarouselCards'
 export default function Home() {
   return (
     <div>
-        <Navbar/>
-        <Carousel />
-       {/*  <BannerPagos /> */}
-       <CarouselCards />
+      <Navbar />
+      <Carousel />
+      <CarouselCards />
+      <BannerPagos />
     </div>
   )
 }
