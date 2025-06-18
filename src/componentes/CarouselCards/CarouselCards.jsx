@@ -4,7 +4,7 @@ import React from 'react'
 import './CarouselCards.css'
 
 // Import Swiper React components
-import { Virtual, Navigation } from 'swiper/modules';
+import { Virtual, Navigation, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -12,6 +12,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
+// Iconos
+import { IoIosAddCircleOutline } from "react-icons/io";
 
 const DatosCard = [
     {
@@ -51,12 +53,16 @@ export default function App() {
     return (
         <div id='ContenedorGeneralCarouselCards'>
             <Swiper
-                modules={[Virtual, Navigation]}
+                modules={[Virtual, Navigation, Autoplay]}
                 slidesPerView={1}
                 centeredSlides={false}
                 spaceBetween={0}
                 navigation={false}
                 virtual
+                autoplay={{
+                    delay: 3500,
+                    disableOnInteraction: false,
+                }}
                 id='SwiperCards'
                 breakpoints={{
                     // Cuando el ancho de la ventana es >= 1024px (laptops/desktops)
@@ -64,16 +70,19 @@ export default function App() {
                         slidesPerView: 3, // <-- Aquí defines que muestre 3 cards
                         spaceBetween: 2,
                     },
+
                 }}
             >
                 {DatosCard.map((slide) => (
                     <SwiperSlide id='SwiperContenedor' key={slide.id} style={{ backgroundImage: `url(${slide.imagen})`, backgroundSize: 'cover', backgroundPosition: 'center' }} >
                         <div className='ContenedorTextoCard'>
                             <img id='ImagenCard' src={slide.imagen} alt="" />
-                                <h2 className='TituloCard'>{slide.titulo}</h2>
-                                <p className='DescripcionCard'>{slide.descripcion}</p>
-                                <p className='PrecioCard'>${slide.precio.toLocaleString('es-CL')}</p>
-                                <button className='BotonCard'>Comprar</button>
+                            <h2 className='TituloCard'>{slide.titulo}</h2>
+                            <p className='DescripcionCard'>{slide.descripcion}</p>
+                            <p className='PrecioCard'>${slide.precio.toLocaleString('es-CL')}</p>
+                            <div id='ContenedorBotonCard'>
+                                <IoIosAddCircleOutline style={{ fontSize: '2rem', }} />
+                            </div>
                         </div>
                     </SwiperSlide>
                 ))}
