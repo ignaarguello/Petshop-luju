@@ -1,7 +1,56 @@
-@media screen and (min-width: 360px) {  
-    #ContenedorGeneralCarouselCards{
-        border: 5px solid green;
-        height: 100vh;
+@media screen and (min-width: 360px) {
+
+    /* ? Contenedor General */
+    #ContenedorGeneralCarouselCards {
+        /*   border: 5px solid green; */
+        min-height: 100vh;
         width: 100%;
+        margin-top: 3rem;
     }
+
+    /* ? Swiper Contenedor */
+    #SwiperContenedor {
+/*         border: 2px solid red; */
+        min-height: 100vh;
+        padding: 2rem;
+    }
+
+    /* ? Contenedor de las Cards */
+    #SwiperCards {
+  /*       border: 2px solid slateblue; */
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    /*? Imagen Card */
+    #ImagenCard {
+        /*  border: 2px solid blue; */
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* ? Titulo de la card */
+    .TituloCard{
+        align-self: flex-end;
+        font-size: 16px;
+        margin-top:20px;
+        color: black;
+        font-weight: bold;
+    }
+
+    /*? Descripcion de la cara */
+    .DescripcionCard{
+        font-size: 13px;
+        text-align: justify;
+    }
+
+    /* ? Precio de la card */
+    .PrecioCard{
+        font-size: 16px;
+        font-weight: bold;
+        color: var(--color--principal);
+    }
+
 }
