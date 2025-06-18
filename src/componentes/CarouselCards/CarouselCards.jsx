@@ -45,7 +45,29 @@ const DatosCard = [
         imagen: 'imagenes/productos/comidas/EukanubaCard.png',
         precio: 63670,
 
-    }
+    },
+    {
+        id: 5,
+        titulo: 'Excellent Gato adulto 3 Kg + Pouch Fancy Feast',
+        descripcion: 'Excellent Cat Adult Smart es un alimento completo y balanceado a base de proteínas de alta calidad provenientes del pollo y el arroz como principales ingredientes.',
+        imagen: 'imagenes/productos/comidas/ExcellentGato.png',
+        precio: 24170,
+    },
+
+    {
+        id: 6,
+        titulo: 'Pro Plan Cat Adult 7+ 3 Kg',
+        descripcion: 'Alimento super premium para gatos mayores de 7 años.',
+        imagen: 'imagenes/productos/comidas/ProPlanGato.png',
+        precio: 43170,
+    },
+    {
+        id: 7,
+        titulo: 'Old Prince Equilibrium Gato Adulto Complete Care 7.5 Kg',
+        descripcion: 'Su aporte de aceites esenciales Omega 3 y 6 fortalece el sistema inmune y estimula la salud de la piel y el pelaje de tu gato.',
+        imagen: 'imagenes/productos/comidas/OldPrinceGato.png',
+        precio: 40700,
+    },
 ];
 
 export default function App() {
